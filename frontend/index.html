@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studdy - Personalized Learning Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Studdy</h1>
+            <p>Get personalized study plans powered by AI</p>
+        </header>
+
+        <main>
+            <form id="studyForm" class="study-form">
+                <h2>Create Your Study Plan</h2>
+                
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="subject" placeholder="What do you want to learn?" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="number" id="hours" placeholder="Hours per week" min="1" max="40" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Get My Study Plan</button>
+            </form>
+
+            <div id="result" class="result-container"></div>
+            <div id="loading" class="loading hidden">Creating your personalized plan...</div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
